@@ -13,7 +13,7 @@ The Chief Data Scientist for a school district is analyzing informatino from man
 Once the analysis was complete, it was reviewed by the school board and the superintendent to better inform future decisions for the district. Unfortunately, the school board has notified the Chief Data Scientist and her department that the student data file revealed evidence of academic dishonestly. The ninth graders at a high school in the district have altered their math and reading scores. This data cannot be submitted to the state for review, so we must scrub the data of all the ninth grade student data and then reflect on how it changes patterns and performance trends. 
 
 
-#- How is the district summary affected?#
+- How is the district summary affected?
 
 After the ninth grader data had been replaced with NaN values for every math and reading score, we were able to compare the data with and without the influence of these values. As shown in the images below, there is not a huge difference between the passing percentages. Both the passing math percentage and the passing reading percentage only differed by 0.1%. The overall passing has a difference of 0.3%. There is not a huge effect when we remove the ninth graders data. This is actually a good thing. If we removed the data and it shifted a dramatic amount, we would know that the academic dishonesty had significantly affected the performance trends. 
 
@@ -22,7 +22,7 @@ After the ninth grader data had been replaced with NaN values for every math and
 [District Summary WITH ninth graders](https://user-images.githubusercontent.com/102566199/167239637-8126ccc4-f352-405e-8ce9-0929c9cd1460.png)
 
 
-#- How is the school summary affected?#
+- How is the school summary affected?
 
 The ninth grader data had a significant effect on the school summary. In this dataframe, the code analyzed each specific schoo site individually. To fully exclude the ninth graders data, the code had to be rewritten to only use the tenth through twelfth graders as students counted for the analysis.
 
@@ -42,13 +42,13 @@ This code allowed us to recalculate the passing math and reading percentages as 
 
 After the ninth graders were removed, the overall passing percentages increased by a minimum of 20% across math, reading, and overall. This means that the academic dishonesty definitely affected the individual school summary and needed to be removed to accurately represent the performance of the Thomas High School. 
 
-#- How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?#
+- How does replacing the ninth graders’ math and reading scores affect Thomas High School’s performance relative to the other schools?
 
 Similar to the overall difference in percentages seen in the district summary, Thomas High School's performance in relation with the other schools did not change. The original analysis resulted in Thomas High ranked second in the list of top performing schools, coming in at a 90.9% overall passing rate. The redone analysis kept Thomas High at number two, resulting in a overall passing percentage of 90.6%. 
 
 [High Performing Schools After Adjustment](https://user-images.githubusercontent.com/102566199/167240404-a5f24238-dc44-4fca-b43e-a11f70785629.png)
 
-#- How does replacing the ninth-grade scores affect the following:# 
+- How does replacing the ninth-grade scores affect the following: 
 
 *Math and reading scores by grade*
 
@@ -59,7 +59,7 @@ The original results for Thomas High School yielded an average math score of 83.
 
 *Scores by school spending*
 
-Thomas High School's school spending won't change, even after the data was adjusted for the academic dishonesty. ????? ###come back to this
+Thomas High School's school spending won't change, even after the data was adjusted for the academic dishonesty. It will remain in the same range of $630-644 per student. 
 
 [Thomas High's Spending Range](https://user-images.githubusercontent.com/102566199/167240863-49475893-69d2-4e48-9f86-880f0db46d65.png)
 
@@ -80,3 +80,4 @@ The removal of the ninth grader data did not affect the school type vs. scores t
 
 *4 changes after the ninth graders data was removed.*
 
+By adjusting the data and removing data that might have been tainted by academic dishonesty, we aired on the side of caution and made sure that any issues were taken care of. Thankfully, there were not any tremendous changes that resulted from the removal of the ninth graders data. There were a few changes though: the district summary was affected by the removal of the data and showed a drop in the overall passing percentages, the math and reading scores showed a small drop in passing percentages, the other grades within Thomas High were not affected by the academic dishonesty of the ninth graders, and there were minute decrease in the passing percentage when compared with the school size, type, and spending. 
